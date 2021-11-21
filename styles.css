@@ -1,0 +1,42 @@
+/* Main Styles */
+
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url("assets/fonts/OpenSans-SemiBold.ttf"); /* Don't forget fallbacks! */
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("assets/fonts/OpenSans-Light.ttf");
+}
+body {
+    font-family: "Open Sans Light";
+    background-color: #0E1414;
+    color: #e4e4e4;
+}
+p {
+    font-family: "Open Sans Light";
+    font-weight: normal;
+    font-size: 16px;
+}
+h1 {
+    font-family: "Open Sans Light";
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "Open Sans Semibold";
+    text-transform: uppercase;
+}
+h4 {
+    font-family: "Open Sans Semibold";
+    color: #CF1430;
+    text-transform: uppercase;
+}
+.quote {
+    font-family: "Open Sans Semibold";
+}
+.read-more {
+    font-family: "Open Sans Semibold";
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 1px solid red;
+}
