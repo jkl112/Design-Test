@@ -7,7 +7,6 @@ class Animations {
         this.startAnimation();
         this.bindRollovers();
         this.block2offset = document.getElementById("main_heading2").offsetTop;
-        this.trackScroll();
         this.consoleLogClickedElems();
     }
     hideElements(){ //Elements are hidden with JS so that users with JS disabled can still use program
@@ -17,9 +16,11 @@ class Animations {
         $("p").animate({"opacity": "0"}, 0).css("margin-left", "-10px");
     }
     startAnimation(){
-        $("document").ready(() => {
+        window.onload = () => { //Test this live.
+            $("#loading_spinner").remove();
             this.animateDocument();
-        });
+            this.trackScroll();
+        }
     }
     animateDocument() {
         var timeout = 760;
@@ -36,7 +37,7 @@ class Animations {
             $("p").each(function(){
                 $(this).animate({"opacity": "1", "margin-left": "0px"}, 1000);
             });
-        }, 500);
+        }, 1500);
     }
     fadeInCards(){
         var timeout = 100;
