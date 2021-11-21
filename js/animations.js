@@ -50,16 +50,16 @@ class Animations {
     }
     bindRollovers(){
         $(".gallery_img, .card_img").mouseover(function(){
-            $(this).fadeTo("fast", 0.4);
+            $(this).stop().dequeue().fadeTo("fast", 0.4);
         });
         $(".gallery_img, .card_img").mouseout(function(){
-            $(this).fadeTo("fast", 1);
+            $(this).stop().dequeue().fadeTo("fast", 1);
         });
         $("a").mouseover(function(){
-            $(this).animate({"margin-left": "10px"}, 200);
+            $(this).stop().dequeue().animate({"margin-left": "10px"}, 200);
         });
         $("a").mouseout(function(){
-            $(this).animate({"margin-left": "0px"}, 200);
+            $(this).stop().dequeue().animate({"margin-left": "0px"}, 200);
         });
     }
     trackScroll(){
