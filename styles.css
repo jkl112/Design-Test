@@ -10,7 +10,7 @@
 }
 body {
     font-family: "Open Sans Light";
-    background-color: #0E1414;
+    background-color:#0E1414;
     color: #e4e4e4;
     padding: 5px;
 }
@@ -24,8 +24,10 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    font-family: "Open Sans Semibold";
+    font-family: "Open Sans Light";
     text-transform: uppercase;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e4e4e4;
 }
 h4 {
     font-family: "Open Sans Semibold";
@@ -34,12 +36,6 @@ h4 {
 }
 .quote {
     font-family: "Open Sans Semibold";
-}
-.read_more {
-    font-family: "Open Sans Semibold";
-    text-transform: uppercase;
-    padding-bottom: 4px;
-    border-bottom: 1px solid red;
 }
 
 /* Image Styles */
@@ -62,4 +58,32 @@ h4 {
 }
 .gallery_column:first-of-type {
     padding-right: 1.4%;
+}
+
+/* Card Styles */
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+.article_container {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.card_text {
+    color: #a0a0a0;
+}
+.article_container img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 5px solid red;
+}
+.read_more {
+    font-family: "Open Sans Semibold";
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 1px solid red;
 }
