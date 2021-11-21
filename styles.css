@@ -1,10 +1,8 @@
 /* Main Styles */
 
-/* NEED TO FIX ALL FONTS TO MATCH MOCKUP PERFECTLY */
-
 @font-face {
     font-family: "Open Sans Semibold";
-    src: url("assets/fonts/OpenSans-SemiBold.ttf"); /* Don't forget fallbacks! */
+    src: url("assets/fonts/OpenSans-SemiBold.ttf"); /* Would've been better to add font fallbacks! */
 }
 @font-face {
     font-family: "Open Sans Light";
@@ -127,6 +125,7 @@ h4 { /* Be mindful */
 }
 
 /* Media Queries */
+/* Just went with media queries rather than Bootstrap. */
 
 @media only screen and (max-width: 1200px) {
     #gallery {
