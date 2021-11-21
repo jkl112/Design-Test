@@ -12,6 +12,7 @@ body {
     font-family: "Open Sans Light";
     background-color: #0E1414;
     color: #e4e4e4;
+    padding: 5px;
 }
 p {
     font-family: "Open Sans Light";
@@ -34,7 +35,7 @@ h4 {
 .quote {
     font-family: "Open Sans Semibold";
 }
-.read-more {
+.read_more {
     font-family: "Open Sans Semibold";
     text-transform: uppercase;
     padding-bottom: 4px;
@@ -43,3 +44,22 @@ h4 {
 
 /* Image Styles */
 
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 50%;
+}
+.gallery_column {
+    flex: 25%;
+    padding: 4px;
+}
+.gallery_img {
+    vertical-align: middle;
+    width: 100%;
+    padding-top: 5.1%;
+    max-height: 98%;
+}
+.gallery_column:first-of-type {
+    padding-right: 1.4%;
+}
